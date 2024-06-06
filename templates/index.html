@@ -4,7 +4,7 @@
     <title>Home Page</title>
 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,14 +13,157 @@
     <a class="nav-link active" aria-current="page" href="/">Домашняя страница</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/blog/">blog</a>
+    <a class="nav-link" href="/blog/">О нас</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/contacts/">contacts</a>
+    <a class="nav-link" href="/contacts/">Контакты</a>
   </li>
 </ul>
 
 
+
+  <!-- Шапка сайта -->
+    <header class="bg-light py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h3">Моделисты Ейска</h1>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <!-- Первая секция: Слайдер -->
+        <section class="mb-5">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/image/m1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/image/m2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/image/m3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/image/m4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/image/m5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/image/m6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/image/m7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Вторая секция: Карточки -->
+        <section class="mb-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="../static/image/m11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Краевой чемпионат по судомодельному спорту "CUP-2021"</h5>
+                            <p class="card-text">Краевые соревнования по судомодельному спорту в классе гоночных моделей "mini","expert" .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../static/image/m22.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Открытое первенство "Моделисты Ейска" 2023г.</h5>
+                            <p class="card-text">Открытые соревнования  по авиамодельному спорту среди школьников в классе кордовых моделей копий.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../static/image/m33.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Всероссийский фестиваль "От винта" Москва 2023г.</h5>
+                            <p class="card-text">Лауриаты всероссийского фестиваля "Отвинта" в номинации беспилотных аппаратов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Третья секция: Аккордеон -->
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Kраевое первенство по гоночным судомоделям  в кассе "mini", "expert", 'Mono 1', "Mono 2"
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Краевые соревнования  по гоночным судомоделям проходили  в одном из живописнейших мест Краснодарского Края.
+                             Ейская команда была представлени   опытными спортсменами  и молодыми юниорами,  которые должны перенять опыт  и мастерство страрших товарищей
+                            Соревнования прошли на высоком профессиональном уровне. Судейскую бригаду  возглавлял заслуженный судья высшей категории Старников Александр Фадеевич
+                             В упорной спортивной борьбе команда  Ейска заняла второе место. В личном первенстве  хорошо выступили и заняли призовые места  Наумкин Николай, Старовойтов Вячеслав
+                             Победители и призеры были награждены медалями. грамотами и ценными призами
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Открытое первенство "Моделисты Ейска" 2023г.
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Открытое первенство "Моделисты Ейска" проводилось среди школьников младшего и среднего возрастав классе кордовых моделей копий. В этих соревнования приняли участие воспитанники
+                            разных обьединенний технического творчества. На соревнованиях были представлены облегченные контурные модели копии знаменитых отечественных самолетов.
+                            Ребята построили их своими руками и освоили их пилотирование. Лучшим пилотом стал воспитанник ЕСЮТ Наумкин Николай, тренер и наставник  Бортников С.В.
+                            Николай выступал с моделью копией "Як-18п" с двигателем 3,5 см3 Два других места заняли воспитаники авиамодельного клуба ДОСААФ г.Ейска Владимир Мирны
+                             и Старовойтов Вячеслав , тренер и наставник заслуженный мастер спрорта Владивостоков А.О.
+                        </div>
+                        </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Всероссийский фестиваль "От винта" Москва 2022г.
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            На Всероссийский фестиваль "От винта" проходивший Москве, в май 2022г после многочисленных региональных отборов
+                            были приглашены  учавствовать два наших воспитанныки  Ейской СЮТ Старовойтов  Максим  и  Геннадий Соловьев. На фестиваль они представили
+                            свои работы : автономный ныряющий робот-помошник водолаза и летающий гибрид планера - коптера. Работы  были достойно оценены и их юнные
+                            конструкторы  были в числе лакриатов. Они были удостоины почетными грамотами и путевками в ммммолодежный лагерь  "Орленок"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 

@@ -1,6 +1,6 @@
 body {
 
-    background-image: url('../static/image/sky.jpg');
+    background-image: url('sky.jpg');
     background-size: cover;
     background-position: center;
 
